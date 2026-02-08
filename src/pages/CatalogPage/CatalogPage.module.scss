@@ -1,0 +1,34 @@
+@use '@/styles/globalColors' as *;
+
+.page { padding: 1.5rem; }
+.header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
+.title { font-size: 1.75rem; font-weight: 700; color: $color-text-primary; margin: 0 0 0.25rem; }
+.subtitle { font-size: 0.9rem; color: $color-text-muted; margin: 0; }
+.filters { display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; padding: 1rem; }
+.filters > * { flex: 1; min-width: 200px; max-width: 300px; }
+
+.productGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+.productCard { overflow: hidden; display: flex; flex-direction: column; }
+.productImage { height: 180px; background: $color-bg-tertiary; display: flex; align-items: center; justify-content: center; overflow: hidden;
+  img { width: 100%; height: 100%; object-fit: cover; }
+}
+.placeholder { font-size: 4rem; opacity: 0.3; }
+.productInfo { padding: 1rem; flex: 1; display: flex; flex-direction: column; gap: 0.5rem; }
+.productName { font-size: 1.1rem; font-weight: 600; color: $color-text-primary; margin: 0; }
+.productDesc { font-size: 0.85rem; color: $color-text-muted; margin: 0; flex: 1; }
+.productFooter { display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem; }
+.price { font-size: 1.25rem; font-weight: 700; color: $color-primary; }
+.orderAction { margin-top: 0.75rem; }
+.productActions { display: flex; gap: 0.5rem; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid $color-border-light; }
+.empty { grid-column: 1 / -1; text-align: center; color: $color-text-muted; padding: 3rem; }
+
+.form { display: flex; flex-direction: column; gap: 1rem; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.modalFooter { display: flex; justify-content: flex-end; gap: 0.75rem; }
+
+.orderProductInfo { display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; background: $color-bg-tertiary; border-radius: 0.5rem; }
+.orderProductName { font-weight: 600; color: $color-text-primary; font-size: 0.95rem; }
+.orderProductPrice { font-weight: 600; color: $color-primary; font-size: 0.95rem; }
+.orderTotal { text-align: right; font-size: 1.1rem; color: $color-text-primary; padding: 0.5rem 0; border-top: 1px solid $color-border-light;
+  strong { color: $color-primary; font-size: 1.2rem; }
+}

@@ -1,0 +1,68 @@
+@use '@/styles/globalColors' as *;
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+
+// Handicraft-Store: Мягкие уютные карточки (handmade стиль)
+.form {
+  @include flex-column;
+  gap: $spacing-xl;
+}
+
+.roleSelector {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+.roleButton {
+  @include flex-start;
+  gap: $spacing-lg;
+  padding: $spacing-lg $spacing-xl;
+  background: $color-bg-secondary;
+  border: 2px dashed $color-border-light;
+  border-radius: $radius-full;
+  cursor: pointer;
+  transition: all $transition-smooth;
+  
+  svg {
+    width: 36px;
+    height: 36px;
+    padding: $spacing-sm;
+    background: $color-bg-primary;
+    border-radius: 50%;
+    color: $color-primary-light;
+    transition: all $transition-smooth;
+  }
+  
+  span {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-medium;
+    color: $color-text-secondary;
+    font-family: $font-family-primary;
+  }
+  
+  &:hover {
+    border-style: solid;
+    border-color: $color-primary-light;
+    background: $color-bg-primary;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    
+    svg { background: $color-primary-lightest; color: $color-primary; }
+  }
+  
+  &.active {
+    border-style: solid;
+    border-color: $color-primary;
+    background: $color-bg-primary;
+    box-shadow: 0 4px 16px rgba($color-primary, 0.15);
+    
+    svg { background: $color-primary; color: $color-text-inverse; }
+    span { color: $color-primary; font-weight: $font-weight-semibold; }
+  }
+}
+
+.actions {
+  @include flex-end;
+  gap: $spacing-md;
+  padding-top: $spacing-md;
+}

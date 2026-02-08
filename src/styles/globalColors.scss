@@ -1,0 +1,56 @@
+// Global Colors - Warm Rose-Plum Handicraft Theme
+$color-primary-darkest: #6D2B5A;
+$color-primary-dark: #8B3A6E;
+$color-primary: #A64D79;
+$color-primary-medium: #C96B98;
+$color-primary-light: #E091B8;
+$color-primary-lighter: #F0B8D4;
+$color-primary-lightest: #FCE4EC;
+
+$color-accent: #FF8A65;
+$color-accent-light: #FFCCBC;
+$color-accent-warm: #D4A574;
+
+$color-bg-primary: #FFFBF8;
+$color-bg-secondary: #FFF5F0;
+$color-bg-tertiary: #FFEDE6;
+$color-bg-dark: #6D2B5A;
+
+$color-text-primary: #3E2723;
+$color-text-secondary: #5D4037;
+$color-text-muted: #8D6E63;
+$color-text-light: #A1887F;
+$color-text-inverse: #FFFFFF;
+
+$color-success: #66BB6A;
+$color-success-light: #C8E6C9;
+$color-warning: #FFA726;
+$color-warning-light: #FFE0B2;
+$color-error: #EF5350;
+$color-error-light: #FFCDD2;
+$color-info: #42A5F5;
+$color-info-light: #BBDEFB;
+
+$color-border-primary: #E8D5D0;
+$color-border-light: #F5EBE8;
+$color-border-dark: #D7C4BD;
+
+$color-shadow: rgba(109, 43, 90, 0.08);
+$color-shadow-medium: rgba(109, 43, 90, 0.12);
+$color-shadow-dark: rgba(109, 43, 90, 0.2);
+
+$gradient-primary: linear-gradient(135deg, $color-primary 0%, $color-accent 100%);
+$gradient-header: linear-gradient(180deg, $color-primary-darkest 0%, $color-primary-dark 100%);
+$gradient-card: linear-gradient(145deg, $color-bg-primary 0%, $color-bg-secondary 100%);
+
+:root {
+  --color-primary-darkest: #{$color-primary-darkest}; --color-primary-dark: #{$color-primary-dark}; --color-primary: #{$color-primary};
+  --color-primary-medium: #{$color-primary-medium}; --color-primary-light: #{$color-primary-light}; --color-primary-lighter: #{$color-primary-lighter}; --color-primary-lightest: #{$color-primary-lightest};
+  --color-accent: #{$color-accent}; --color-accent-light: #{$color-accent-light}; --color-accent-warm: #{$color-accent-warm};
+  --color-bg-primary: #{$color-bg-primary}; --color-bg-secondary: #{$color-bg-secondary}; --color-bg-tertiary: #{$color-bg-tertiary}; --color-bg-dark: #{$color-bg-dark};
+  --color-text-primary: #{$color-text-primary}; --color-text-secondary: #{$color-text-secondary}; --color-text-muted: #{$color-text-muted}; --color-text-light: #{$color-text-light}; --color-text-inverse: #{$color-text-inverse};
+  --color-success: #{$color-success}; --color-success-light: #{$color-success-light}; --color-warning: #{$color-warning}; --color-warning-light: #{$color-warning-light};
+  --color-error: #{$color-error}; --color-error-light: #{$color-error-light}; --color-info: #{$color-info}; --color-info-light: #{$color-info-light};
+  --color-border-primary: #{$color-border-primary}; --color-border-light: #{$color-border-light}; --color-border-dark: #{$color-border-dark};
+  --color-shadow: #{$color-shadow}; --color-shadow-medium: #{$color-shadow-medium}; --color-shadow-dark: #{$color-shadow-dark};
+}

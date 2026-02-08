@@ -1,0 +1,60 @@
+@use '@/styles/globalColors' as *;
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+
+// Handicraft-Store: Мягкие уютные карточки (handmade стиль)
+.card {
+  display: flex;
+  flex-direction: column;
+  background: $color-bg-primary;
+  border-radius: $radius-xl;
+  border: 2px dashed $color-border-light;
+  overflow: hidden;
+  transition: all $transition-smooth;
+}
+
+.default { background: $color-bg-primary; }
+.outlined { 
+  background: transparent; 
+  border-style: solid;
+  border-color: $color-primary-light;
+}
+.elevated { 
+  background: $color-bg-primary; 
+  border-style: solid;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.padding-none .content { padding: 0; }
+.padding-sm .content { padding: $spacing-sm; }
+.padding-md .content { padding: $spacing-md; }
+.padding-lg .content { padding: $spacing-xl; }
+
+.hoverable {
+  cursor: pointer;
+  
+  &:hover {
+    border-style: solid;
+    border-color: $color-primary;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.header {
+  padding: $spacing-lg $spacing-xl;
+  border-bottom: 1px dashed $color-border-light;
+  font-family: $font-family-primary;
+  
+  &:empty { display: none; }
+}
+
+.content { flex: 1; }
+
+.footer {
+  padding: $spacing-md $spacing-xl;
+  background: $color-bg-secondary;
+  border-top: 1px dashed $color-border-light;
+  
+  &:empty { display: none; }
+}
